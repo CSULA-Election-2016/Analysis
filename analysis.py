@@ -4,7 +4,7 @@ import string
 
 def main():
     printable = set(string.printable)
-    reader = csv.reader(open('./data/5_10-6_1.csv', 'rb'))
+    reader = csv.reader(open('./data/output.csv', 'rb'))
     fd = open("out.csv", "wb+")
     writer = csv.writer(fd)
     header = reader.next()
